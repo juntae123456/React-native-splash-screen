@@ -33,14 +33,14 @@
                 </group>
                 <group
                     android:name="group_3"
-                    android:pivotX="111"
-                    android:pivotY="95"
+                    android:pivotX="115"
+                    android:pivotY="113"
                     android:scaleX="0"
                     android:scaleY="0">
                     <path
                         android:name="path_4"
                         android:pathData="M 114.5 68.5 C 114.836 94.683 115.836 120.683 117.5 146.5 C 116.791 147.404 115.791 147.737 114.5 147.5 L 114.5 68.5 Z"
-                        android:fillColor="#4d2160"
+                        android:fillColor="#24115f"
                         android:strokeWidth="1"/>
                     <path
                         android:name="path_3"
@@ -51,8 +51,9 @@
                 <group
                     android:name="group_2"
                     android:pivotX="77"
+                    android:pivotY="106"
                     android:scaleX="0"
-                    android:scaleY="95">
+                    android:scaleY="0">
                     <path
                         android:name="path_2"
                         android:pathData="M 114.5 67.5 L 114.5 147.5 L 76.5 147.5 C 76.333 130.497 76.5 113.497 77 96.5 C 82.417 77.574 94.917 67.907 114.5 67.5 Z"
@@ -67,18 +68,20 @@
             <set>
                 <objectAnimator
                     android:propertyName="scaleX"
-                    android:duration="301"
+                    android:startOffset="75"
+                    android:duration="148"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType"
-                    android:interpolator="@android:interpolator/linear_out_slow_in"/>
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
                 <objectAnimator
                     android:propertyName="scaleY"
-                    android:duration="301"
+                    android:startOffset="75"
+                    android:duration="148"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType"
-                    android:interpolator="@android:interpolator/linear_out_slow_in"/>
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
         </aapt:attr>
     </target>
@@ -87,20 +90,20 @@
             <set>
                 <objectAnimator
                     android:propertyName="scaleX"
-                    android:startOffset="272"
-                    android:duration="279"
+                    android:startOffset="207"
+                    android:duration="134"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType"
-                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
                 <objectAnimator
                     android:propertyName="scaleY"
-                    android:startOffset="272"
-                    android:duration="279"
+                    android:startOffset="207"
+                    android:duration="134"
                     android:valueFrom="1"
                     android:valueTo="1"
                     android:valueType="floatType"
-                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
         </aapt:attr>
     </target>
@@ -109,16 +112,16 @@
             <set>
                 <objectAnimator
                     android:propertyName="scaleX"
-                    android:startOffset="518"
-                    android:duration="282"
+                    android:startOffset="316"
+                    android:duration="100"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
                 <objectAnimator
                     android:propertyName="scaleY"
-                    android:startOffset="518"
-                    android:duration="282"
+                    android:startOffset="316"
+                    android:duration="100"
                     android:valueFrom="1"
                     android:valueTo="1"
                     android:valueType="floatType"
@@ -126,16 +129,26 @@
             </set>
         </aapt:attr>
     </target>
-    <target android:name="vector">
+    <target android:name="group">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:propertyName="alpha"
-                android:startOffset="800"
-                android:duration="100"
-                android:valueFrom="1"
-                android:valueTo="1"
-                android:valueType="floatType"
-                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <set>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:startOffset="400"
+                    android:duration="100"
+                    android:valueFrom="1"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:startOffset="400"
+                    android:duration="100"
+                    android:valueFrom="1"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
         </aapt:attr>
     </target>
 </animated-vector>
