@@ -1,79 +1,35 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React-Native splash screen example
 
-# Getting Started
+리액트 네이티브의 android와 ios의 스플래쉬 스크린 예제입니다.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 프로젝트 설명
 
-## Step 1: Start the Metro Server
+- android 스플래시 화면은 동적화면으로 구성하였고 스플래시 화면에서 메인화면으로 너무 빨리 지나가지 않도록 딜레이 2초를 걸었습니다.
+- ios 스플래시 화면은 codex를 통하여 정적화면으로 구성하였습니다.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 설치 방법
 
-```bash
-# using npm
-npm start
+1. 버전관리에서 코드를 클론해온다.
+2. react-native 설치후 사용하시면 됩니다.
+3. 사진을 바꾸실려면 android/../src/drawable 안에 splash_animated_vector.xml파일을 교체하시면됩니다. ios는 xcode에서 launch_screen에서 교체하시면 됩니다.
 
-# OR using Yarn
-yarn start
-```
 
-## Step 2: Start your Application
+### 참고 자료
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+https://medium.com/@csh153/splashscreen-api-200-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0-14eb20d2e491
 
-### For Android
+### 화면 구성
 
-```bash
-# using npm
-npm run android
+|안드로이드|ios|
+|:---:|:---:|
+|<video src="https://github.com/user-attachments/assets/f1e9848e-f348-4207-8a64-ed724df7cbd7" width="400"/>|<video src="https://github.com/user-attachments/assets/104faf42-0777-4325-80b6-8fd06b4071f6" width="400"/>|
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
 
-Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
